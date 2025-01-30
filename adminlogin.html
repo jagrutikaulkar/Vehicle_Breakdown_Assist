@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('admin.jpg');
+             background-size: cover; 
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;
+        }
+        .login-container {
+            backdrop-filter: blur(4px);
+            box-shadow: 0 0 50px rgba(0, 0, 0, 2);
+            border-radius: 10px;
+           
+            padding: 40px;
+            max-width: 400px;
+            width: 100%;
+            background-color: white;
+            color: rgb(2, 0, 0);
+        }
+        .login-heading {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #090000;
+        }
+        .btn-login {
+            background-color: #22083a;
+            border-color: #1d0433;
+            color: #fcf9f9;
+        }
+        .btn-login:hover {
+            background-color: #520858;
+            border-color: #3f073a;
+        }
+        .form-control:focus {
+            border-color: #0b0542;
+            box-shadow: none;
+        }
+        .website-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .form-control {
+            color: #1b0202; 
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+        .logo {
+            display: block;
+            margin: 0 auto;
+            width: 150px; /* Adjust width as needed */
+            border-radius: 100%; /* Make the image round */
+            background-color: transparent;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="mainlogo.jpg" alt="Logo" class="img-fluid">
+        </div>
+
+        <h2 class="login-heading">Admin Login</h2>
+        <form action="adminlogin.php" method="POST">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn btn-lg btn-block btn-login">Login</button>
+            <div class="website-link">
+                <p>Go to website <a href="f/index.html" target="_blank">here</a></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

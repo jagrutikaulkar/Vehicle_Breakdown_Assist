@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechanic Assistance App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: rgb(12, 1, 1);
+        }
+
+        header {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            color: #fff;
+        }
+
+        button {
+            padding: 12px 20px;
+            margin: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        .icon {
+            font-size: 24px;
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mechanic Assistance App</h1>
+    </header>
+
+    <main>
+        <div class="card">
+            <i class="fas fa-wrench icon"></i>
+            <h2>Welcome to Mechanic Assistance Web!</h2>
+            <p>Click on the option below:</p>
+
+            <a href="mech_signinup.html">
+            <button name="sign-up">Sign Up</button>
+            </a>
+        </div>
+    </main>
+
+</body>
+</html>

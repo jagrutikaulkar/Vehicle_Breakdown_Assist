@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Login</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('cust.jpg');
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: left;
+            justify-content: center;
+            margin: 50px auto;
+            color: white;
+        }
+        .login-container {
+            
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 50px rgba(0, 0, 0, 2);
+            border-radius: 10px;
+            height: 450px;
+            padding: 40px;
+            max-width: 450px;
+            width: 100%;
+            margin: 100px auto;
+            font-size: larger;
+
+        }
+        .login-heading {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #ffffff;
+        }
+        .btn-login {
+            background-color: #22083a;
+            border-color: #1d0433;
+            color: #fcf9f9;
+        }
+        .btn-login:hover {
+            background-color: #520858;
+            border-color: #3f073a;
+        }
+        .form-control:focus {
+            border-color: #0b0542;
+            box-shadow: none;
+        }
+        .website-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .form-control {
+            color: #1b0202; 
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+       
+        .header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #100101;
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .form-group1 {
+            color: #fdf8f8; 
+            
+            font-size: 15px;
+        }
+    
+
+        .header a {
+            color: white;
+            text-decoration: none;
+            background-color: #100530;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .header a:hover {
+            background-color: #2980b9;
+        }
+
+        .header h1 {
+            margin: 0;
+            flex-grow: 1;
+            text-align: center;
+        }
+        .back-button {
+            margin-right: 20px;
+           
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="back-button">
+            <a href="http://localhost/mainproject/f/index.html">Back to Home</a>
+        </div>
+        <h1>VEHICLE BREAKDOWN ASSISTANCE</h1>
+        <div class="spacer"></div> <!-- Empty spacer div -->
+    </div>
+   
+    <div class="login-container">
+     
+
+        <h2 class="login-heading">Customer Login</h2>
+        <form action="cust_login.php" method="POST">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+                <div class="form-group1">Forgot your password? <a href="forgetpassword.html">Reset here</a></div>
+            </div>
+            <button type="submit" class="btn btn-lg btn-block btn-login">Login</button>
+            <div class="form-group1">Don't have an Account? <a href="cust_register.html">Create here</a></div>
+            
+        </form>
+        </div>
+      
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

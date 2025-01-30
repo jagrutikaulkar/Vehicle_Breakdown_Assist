@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechanic Profile</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 600px;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="mb-0">Mechanic Profile</h3>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="mechanicPhoto">Upload Photo:</label>
+                        <input type="file" class="form-control-file" id="mechanicPhoto" accept="image/*">
+                        <small class="form-text text-muted">Choose a profile picture</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mechanicName">Name:</label>
+                        <input type="text" class="form-control" id="mechanicName" placeholder="Enter your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mechanicContact">Contact Number:</label>
+                        <input type="tel" class="form-control" id="mechanicContact" placeholder="Enter your contact number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mechanicLocation">Location:</label>
+                        <input type="text" class="form-control" id="mechanicLocation" placeholder="Enter your location">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mechanicSpecialization">Specialization:</label>
+                        <input type="text" class="form-control" id="mechanicSpecialization" placeholder="Enter your specialization">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Save Profile</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

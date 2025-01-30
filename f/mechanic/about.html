@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - VBAS</title>
+    <link rel="stylesheet" href="style.css"> <!-- Make sure to link your CSS file -->
+</head>
+<style>
+    body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('feed.jpeg');
+             background-size: cover; 
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            color: white;
+            
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.nav-logo a, .nav-items a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.nav-items a.active {
+    color: #ec6ead; /* Highlight the active page */
+}
+
+.about-header {
+    background: #eee;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+.about-section .container {
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-section .container img {
+    max-width: 200px; /* Adjust image width as needed */
+    height: auto;
+}
+
+.about-section .container p {
+    flex: 1;
+    padding-left: 1rem; /* Add space between image and text */
+   
+}
+.main {
+            font-size: 18px;
+            max-width: 1400px;
+            margin: 20px auto;
+            padding: 20px;
+           color: white;
+           backdrop-filter: blur(20px);
+            box-shadow: 0 0 50px rgba(0, 0, 0, 2);
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.about-section h2 {
+    text-align: center; /* Align the heading to the center */
+    margin-bottom: 2rem; /* Add some space below the heading */
+    color: white; /* Set the color of the heading */
+}
+
+
+</style>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="http://localhost/mainproject/f/index.html">Vehicle Breakdown Assistance</a>
+        </div>
+        <div class="nav-items">
+            <a href="mech_dashboard.php">Home</a>
+            <a href="services.html">Services</a>
+            <a href="about.html" class="active">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="practice.php">Feedback</a>
+        </div>
+        <div class="nav-actions">
+            <!-- Notification and Logout Buttons -->
+        </div>
+        <div class="nav-actions">
+            <!-- Notification and Logout Buttons -->
+        </div>
+        
+    </nav>
+
+<div class="main">
+    <section class="about-section">
+        <h2>Our Mission</h2>
+        <div class="container">
+            
+            <img src="mission.jpeg" alt="Mission Icon" style="width: 200px; height: 200px;">
+           
+            <p>To provide fast, reliable, and accessible breakdown assistance services to vehicle owners, ensuring safety and peace of mind on the road.<br><br>To redefine the breakdown assistance experience by offering personalized, efficient, and accessible services to drivers everywhere.<br><br>To provide unparalleled breakdown assistance services that prioritize the safety, convenience, and satisfaction of our customers. Through continuous improvement, training, and investment in technology, we ensure swift response times, accurate diagnoses, and effective solutions for all vehicle-related issues. </p>
+        </div>
+
+        <h2>Our Vision</h2>
+        <div class="container">
+            
+            <img src="vision.jpeg" alt="Vision Icon" style="width: 200px; height: 200px;">
+           
+            <p>To be the leading provider of vehicle breakdown assistance, revolutionizing the industry through innovation, efficiency, and exceptional customer service.<br><br>Tp create a world where drivers can rely on VBAS as their trusted guardian on the road, providing swift, reliable, and personalized assistance whenever and wherever they need it. By embracing innovation, collaboration, and sustainability, we strive to make every journey safer, smoother, and more enjoyable for all.<br><br>To build lasting relationships with our customers by delivering unmatched breakdown assistance services that anticipate and exceed their needs. </p>
+        </div>
+     
+        <h2>Our History</h2>
+        <div class="container">
+            <p>Founded in 2023, VBAS has grown from a local roadside assistance provider to a reputable national service network. Our team of certified professionals is dedicated to ensuring quick response times and high-quality service, utilizing the latest technology to connect drivers with the assistance they need. With a relentless focus on customer satisfaction and safety, we have earned the trust of motorists across the country. Whether it's a flat tire, engine breakdown, or lockout situation, VBAS is committed to delivering prompt and reliable solutions, 24/7, 365 days a year. Our extensive network of service providers ensures that help is never far away, no matter where you are. As we continue to expand our reach and enhance our capabilities, VBAS remains steadfast in our mission to provide peace of mind on the road, one driver at a time.</p>
+ </div>
+        
+    </section>
+</div>
+    <footer class="footer">
+        <p>&copy;2024 Vehicle Breakdown Assistance System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

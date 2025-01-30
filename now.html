@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Assistance</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 100px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: pulse 2s infinite alternate;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.05);
+            }
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 20px 30px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .illustration {
+            margin-top: 50px;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Our Assistance Service</h1>
+        <p>We are here to help you with whatever you need.</p>
+        <button class="btn" id="assistanceBtn">Get Assistance</button>
+        <img src="d.jpg" alt="Illustration" class="illustration" id="illustration">
+    </div>
+
+    <script>
+        const illustration = document.getElementById('illustration');
+        const imageUrls = [
+            'a.jpeg',
+            'b.jpeg',
+            'c.jpeg'
+        ];
+
+        let currentIndex = 0;
+
+        function changeImage() {
+            illustration.src = imageUrls[currentIndex];
+            currentIndex = (currentIndex + 1) % imageUrls.length;
+        }
+
+        // Change image every 3 seconds
+        setInterval(changeImage, 3000);
+
+        const btn = document.getElementById('assistanceBtn');
+
+        btn.addEventListener('click', function() {
+            alert('Assistance requested!');
+        });
+    </script>
+</body>
+</html>
